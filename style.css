@@ -1,0 +1,71 @@
+.kalkulator {
+    width: 300px;
+    background: #eaeaea;
+    margin: 50px auto 0px;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+#layar {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #cecece;
+    font-size: 25px;
+    font-weight: bold;
+    color: grey;
+    padding: 5px;
+    text-align: right;
+    outline: none;
+}
+
+.container-tombol {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 7px;
+}
+
+.tombol {
+    display: flex;
+    width: 25%;
+    font-size: 20px;
+    color: grey;
+    font-weight: bold;
+    height: 70px;
+    border: 1px solid #cecece;
+    border-top: none;
+    border-left: none;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+/* pseudo-class nth-child untuk memberi class pada n tertentu */
+.tombol:nth-child(-n+4) {   
+    border-top: 1px solid #cecece;
+}
+
+.tombol:nth-child(4n+1) {
+    border-left: 1px solid #cecece;
+}
+
+.tombol:hover {
+    background: #e4e4e4;
+    cursor: pointer;
+}
+
+.op {
+    background: #d8d8d8;
+}
+
+#nol {
+    flex-grow: 1;
+}
+
+#equal {
+    background: orange;
+    color: white;
+}
+
+#equal:hover {
+    background: #b8a712;
+}
